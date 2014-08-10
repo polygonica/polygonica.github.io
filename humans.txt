@@ -5,7 +5,7 @@ Twitter: @MatthewBArnold
 From: Vancouver, Canada
 
 /* THANKS */
-Green Tea theme designer: Richard Bray
+Frappuccino theme designer: Richard Bray
 Site: http://richbray.me/
 
 /* SITE */
