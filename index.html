@@ -17,7 +17,10 @@ title: Mainpage
     		    <a href="{{ post.url }}">
     		        <h3>{{ post.title }}</h3>
                 <time>{{ post.date | date: "%d %B %Y" }}</time>
-                <div>{{ post.content | truncatewords: 30 }}</div>
+                <div>{{ post.content | split:'<!--break-->' | first }}</div>
+				{% if post.content contains '<!--break-->' %}
+				<a href="{{ post.url }}">(read more)</a>
+				{% endif %}
     		    </a>
     		  </li>
     		{% endfor %}
